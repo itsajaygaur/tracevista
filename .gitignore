@@ -1,0 +1,24 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# testing
+/coverage/
+/playwright-report/
+/test-results/
+
+# local
+.DS_Store
+*.pem
+.env*
+.vercel
+/work/
+
+# typescript
+*.tsbuildinfo
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
