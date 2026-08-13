@@ -82,18 +82,18 @@ export function TraceWorkbench() {
   return (
     <div id="top" className="mx-auto w-full max-w-4xl px-5 pb-16 sm:px-8">
       <section className="pb-12 pt-14 sm:pt-20">
-        <p className="mono-label text-muted-foreground">00 — OpenTelemetry, without the setup</p>
+        <p className="mono-label text-muted-foreground">00 · OpenTelemetry, without the setup</p>
         <h1 className="mt-5 max-w-3xl font-serif text-5xl leading-[1.02] tracking-tight sm:text-7xl">
           Understand every <span className="text-primary">millisecond.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-          Turn raw OTLP traces into service maps, waterfall timelines, latency percentiles, and critical-chain insights—entirely in your browser.
+          Turn raw OTLP traces into service maps, waterfall timelines, latency percentiles, and critical-chain insights, entirely in your browser.
         </p>
       </section>
 
       <section className="rounded-lg border border-border bg-card">
         <div className="flex items-center justify-between gap-4 border-b border-border px-4 py-2.5 sm:px-6">
-          <span className="mono-label">Input — OTLP JSON / JSONL</span>
+          <span className="mono-label">Input: OTLP JSON / JSONL</span>
           <span className="mono-label text-muted-foreground">Max 10 MB · 25,000 spans</span>
         </div>
         <div className="p-4 sm:p-6">
@@ -156,7 +156,7 @@ export function TraceWorkbench() {
             <div className="flex items-start gap-3">
               <ShieldCheck className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
               <div>
-                <div className="text-xs font-semibold">Processed locally — nothing uploaded</div>
+                <div className="text-xs font-semibold">Processed locally, nothing uploaded</div>
                 <div className="mt-0.5 text-[11px] text-muted-foreground">Data stays in memory and disappears when you reset or close this page.</div>
               </div>
             </div>

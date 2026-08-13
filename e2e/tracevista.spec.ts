@@ -4,7 +4,7 @@ import AxeBuilder from "@axe-core/playwright";
 test("landing experience is accessible and communicates local processing", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: /understand every millisecond/i })).toBeVisible();
-  await expect(page.getByText("Processed locally — nothing uploaded")).toBeVisible();
+  await expect(page.getByText("Processed locally, nothing uploaded")).toBeVisible();
   await expect(page.getByRole("button", { name: "Choose file" })).toBeVisible();
 
   const results = await new AxeBuilder({ page }).analyze();

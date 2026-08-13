@@ -1,5 +1,5 @@
 export function formatDuration(milliseconds: number): string {
-  if (!Number.isFinite(milliseconds)) return "—";
+  if (!Number.isFinite(milliseconds)) return "-";
   if (milliseconds === 0) return "0 ms";
   if (milliseconds < 0.001) return "<1 µs";
   if (milliseconds < 1) return `${Math.round(milliseconds * 1000)} µs`;

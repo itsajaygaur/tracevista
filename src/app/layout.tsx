@@ -24,21 +24,21 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tracevista.vercel.app"),
-  title: "TraceVista — OpenTelemetry Trace Inspector",
+  title: "TraceVista: OpenTelemetry Trace Inspector",
   description: "Inspect OTLP traces locally with service maps, waterfall timelines, latency percentiles, and critical-chain analysis.",
   applicationName: "TraceVista",
   keywords: ["OpenTelemetry", "OTLP", "distributed tracing", "observability", "trace visualization"],
   authors: [{ name: "Ajay Gaur", url: "https://ajaygaur.in" }],
   creator: "Ajay Gaur",
   openGraph: {
-    title: "TraceVista — Understand every millisecond",
+    title: "TraceVista: Understand every millisecond",
     description: "A privacy-first OpenTelemetry trace inspector that runs entirely in your browser.",
     type: "website",
     url: "/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TraceVista — OpenTelemetry Trace Inspector",
+    title: "TraceVista: OpenTelemetry Trace Inspector",
     description: "Private, local OTLP trace analysis with no backend and no uploads.",
   },
 };

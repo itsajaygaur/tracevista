@@ -42,7 +42,7 @@ describe("TraceWorkbench", () => {
   it("loads synthetic data through the worker and renders the dashboard", async () => {
     const user = userEvent.setup({ applyAccept: false });
     render(<TraceWorkbench />);
-    expect(screen.getByText("Processed locally — nothing uploaded")).toBeInTheDocument();
+    expect(screen.getByText("Processed locally, nothing uploaded")).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: /load sample trace/i }));
     expect(await screen.findByRole("heading", { name: "Trace analysis" })).toBeInTheDocument();
     expect(screen.getByText("Synthetic demo data")).toBeInTheDocument();

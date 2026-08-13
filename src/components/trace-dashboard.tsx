@@ -150,7 +150,7 @@ export function TraceDashboard({ result, onReset }: { result: AnalysisResult; on
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2"><TimerReset className="size-4 text-primary" aria-hidden="true" /> Estimated critical chain</CardTitle>
                     <CardDescription>
-                      This parent-linked path maximizes accumulated exclusive time. It is an engineering estimate—not a causal guarantee—when async links or instrumentation are incomplete.
+                      This parent-linked path maximizes accumulated exclusive time. It is an engineering estimate, not a causal guarantee, when async links or instrumentation are incomplete.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
