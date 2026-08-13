@@ -6,7 +6,6 @@ import { AlertTriangle, Download, FileJson2, RotateCcw, ShieldCheck, TimerReset 
 import { SpanDetails } from "@/components/span-details";
 import { ServiceMap } from "@/components/service-map";
 import { SummaryGrid } from "@/components/summary-grid";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { TraceList } from "@/components/trace-list";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -78,7 +77,6 @@ export function TraceDashboard({ result, onReset }: { result: AnalysisResult; on
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <ThemeToggle />
           <Button variant="secondary" onClick={exportSummary}>
             <Download className="size-4" aria-hidden="true" />
             Export summary

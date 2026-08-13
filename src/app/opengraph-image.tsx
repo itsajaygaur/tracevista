@@ -5,6 +5,8 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const dynamic = "force-static";
 
+const orange = "#f2701f";
+
 export default function OpenGraphImage() {
   return new ImageResponse(
     <div
@@ -14,23 +16,27 @@ export default function OpenGraphImage() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        background: "#0f172a",
-        color: "white",
+        background: "#202024",
+        color: "#f0eeea",
         padding: 72,
         fontFamily: "sans-serif",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: 18, fontSize: 28, fontWeight: 700 }}>
-        <div style={{ width: 48, height: 48, borderRadius: 13, background: "#3b82f6", display: "flex", alignItems: "center", justifyContent: "center" }}>⌁</div>
-        TraceVista
+      <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+        <div style={{ width: 48, height: 48, borderRadius: 8, background: orange, color: "#202024", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28 }}>⌁</div>
+        <div style={{ fontSize: 28, fontWeight: 700 }}>TraceVista</div>
+        <div style={{ fontFamily: "monospace", fontSize: 18, letterSpacing: 2, color: "#9a9aa2" }}>/ OTLP INSPECTOR</div>
       </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
-        <div style={{ fontSize: 68, lineHeight: 1.05, maxWidth: 920, fontWeight: 750, letterSpacing: -3 }}>Understand every millisecond.</div>
-        <div style={{ color: "#94a3b8", fontSize: 28 }}>Private OTLP trace analysis. No backend. Nothing uploaded.</div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", fontSize: 70, lineHeight: 1.05, maxWidth: 940, fontWeight: 700, letterSpacing: -2 }}>
+          <span>Understand every&nbsp;</span>
+          <span style={{ color: orange }}>millisecond.</span>
+        </div>
+        <div style={{ fontFamily: "monospace", fontSize: 22, letterSpacing: 2, color: "#9a9aa2" }}>PROCESSED LOCALLY — NOTHING UPLOADED</div>
       </div>
       <div style={{ display: "flex", gap: 12 }}>
-        {['Service maps', 'Waterfall timelines', 'Critical-chain analysis'].map((label) => (
-          <div key={label} style={{ border: "1px solid #334155", borderRadius: 999, padding: "10px 18px", color: "#cbd5e1", fontSize: 18 }}>{label}</div>
+        {["SERVICE MAPS", "WATERFALL TIMELINES", "CRITICAL CHAIN"].map((label) => (
+          <div key={label} style={{ border: "1px solid #3a3a40", borderRadius: 4, padding: "10px 18px", color: "#c9c7c2", fontFamily: "monospace", fontSize: 17, letterSpacing: 2 }}>{label}</div>
         ))}
       </div>
     </div>,
